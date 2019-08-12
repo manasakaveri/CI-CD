@@ -25,7 +25,9 @@ elif args.operation == 'multiplication':
      print("operation is multiplication and the value is : " + str(result))
 
 elif args.operation == "division":
-    result = int(args.Number1) / int(args.Number2)
+    #result = float(args.Number1) / float(args.Number2) (This line is printing only tuncanted values so fixing the bug hence changing fro int to float
+
+    result = float(args.Number1) / float(args.Number2)
     print("operation is division  and the value is : " + str(result))
 
 elif args.operation == "subtraction":
